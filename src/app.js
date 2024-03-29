@@ -1,6 +1,6 @@
 //Importar la configuracion de variables desde /config/env
-const {envs} = require('./config/env');
-const { startServer } = require('./server/server')
+import {envs}  from './config/env.js';
+import { startServer } from './server/server.js';
 
 
 

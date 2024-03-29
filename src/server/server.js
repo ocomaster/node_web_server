@@ -1,9 +1,10 @@
 // Configuracion de servidor 
-const express = require('express');
-const path = require('path')
+// const express = require('express');
+import express from 'express';
+import path from 'path';
 
 //Funcion 
-const startServer = (options) =>{
+export const startServer = (options) =>{
     const {port, public_path = 'public'} =options
    
     const app = express()
@@ -22,6 +23,7 @@ app.listen(port, ()=>{
 
 }
 
-module.exports = {
-    startServer
-}
+//Se Omite exportar de esta manera ya que con Module solo se indicaria la palabra export
+// module.exports = {
+//     startServer
+// }
